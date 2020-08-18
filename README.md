@@ -36,11 +36,11 @@ const settings = game.getSettings();
 console.log(settings);
 
 // Get metadata - start time, platform played on, etc
-const metadata = game.getMetadata();
+const metadata = await game.getMetadata();
 console.log(metadata);
 
 // Get computed stats - openings / kill, conversions, etc
-const stats = game.getStats();
+const stats = await game.getStats();
 console.log(stats);
 
 // Get frames – animation state, inputs, etc
